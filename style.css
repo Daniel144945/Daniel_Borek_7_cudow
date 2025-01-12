@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    color: rgb(99, 68, 11);
+    font-family:rubik;
+}
+
+body{
+    background-color:antiquewhite;
+    
+}
+header{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    animation-name: heder1;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+}
+table{
+    border-color: rgb(16, 31, 81);
+    border-width: 10px;
+    border-style: solid;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#tabheder{
+    font-weight:bold;
+    background-color: rgb(220,205,185);
+}
+td{
+    border-color: rgb(16,31,81);
+    border-width: 2px;
+    border-style: solid;
+    border-collapse: collapse;
+}
+input{
+    background-color: rgb(250,235,215);
+    border-style: solid;
+    border-color: rgb(16,31,81);
+}
+
+.menu{
+    width: 1200px;
+    border-width: 5px;
+    border-color: rgb(16,31,81);
+    background-color: rgb(200,185,165);
+    animation-name: heder2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+footer{
+    text-align: center;
+    text-decoration: overline;
+}
+#banner{
+    display: inline;
+}
+#smallbanner{
+    display:none;
+}
+#bigmenu{
+    display: inline;
+}
+#menu{
+    position: fixed;
+}
+#galeria{
+    text-align: center;
+}
+#image{
+    max-width: 75%;
+        height: auto;
+}
+#strzalki{
+    text-align: center;
+}
+.arrow{
+    height:100px;
+}
+ .menumed{
+    display: none;
+    width: 1200px;
+    border-width: 0px;
+    border-color: rgb(16,31,81);
+    background-color: rgb(200,185,165);
+}
+@media screen and (max-width:1200px) {
+    #banner{
+        display: none;
+    }
+    #smallbanner{
+        display:inline;
+    }
+
+    #bigmenu{
+        display: none;
+    }
+    .menumed{
+        display: inline;
+    }
+  
+    }
+  
+
+  @media screen and (max-width:800px) {
+    #banner{
+        display: none;
+    }
+    #smallbanner{
+        display:none;
+    }
+
+    #bigmenu{
+        display: none;
+    }
+    .menumed{
+        display: inline;
+    }
+  
+    }
+    @keyframes heder1{
+        0%{
+            color:blue;
+        }
+        10%{
+            color:chocolate;
+        }
+        20%{
+            color:coral;
+        }
+        30%{
+            color:crimson;
+        }
+        40%{
+            color:cyan;
+        }
+        50%{
+            color:deeppink ;
+        }
+        60%{
+            color:salmon
+        }
+        70%{
+            color:yellow;
+        }
+        80%{
+            color:green;
+        }
+        90%{
+            color:lime;
+        }
+        100%{
+            color: blue;
+        }
+    }
+    @keyframes heder2{
+        0%{
+            background-color: rgb(200,185,165);
+        }
+        50%{
+            background-color: rgb(225,200,200);
+        }
+        100%{
+            background-color: rgb(165,185,200);
+        }
+    }
+    main{
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:rgb(230,210,190); 
+    overflow-x: hidden; 
+    padding-top: 0px;
+    transition: 0.5s;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+
+  .sidenav a:hover {
+    color: rgb(16, 31, 81);
+  }
+  
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 40px;
+    margin-left: 50px;
+  }

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+        <h1>Formularz</h1>
+        <nav>
+            <table class="menu" id="bigmenu">
+                <tr>
+                    <td class="menu"><a href="piramidy.html">Piramida Cheopsa</a></td>
+                    <td class="menu"><a href="ogrody.html">Ogrody Semiramidy</a>
+                    <td class="menu"><a href="artemida.html">Świątynia Artemidy</a></td>
+                    <td class="menu"><a href="zeus.html">Posąg Zeusa</a></td>
+                    <td class="menu"><a href="mauzoleum.html">Mauzoleum w Halikarnasie</a></td>
+                    <td class="menu"><a href="rhodos.html">Kolos Rodyjski</a></td>
+                    <td class="menu"><a href="latarnia.html">Latarnia Aleksandryjska</a></td>
+                    <td class="menu"><a href="galeria.html">Galeria</a></td>
+                    <td class="menu"><a href="form.html">Formularz</a></td>
+                    <td class="menu"><a href="index.html">Strona Główna</a></td>
+                    
+                </tr>
+            </table>
+            <table  class="menumed">
+                <tr>
+                    <td class="menu"><a href="piramidy.html">Piramida Cheopsa</a></td>
+                    <td class="menu"><a href="ogrody.html">Ogrody Semiramidy</a>
+                    <td class="menu"><a href="artemida.html">Świątynia Artemidy</a></td>
+                    <td class="menu"><a href="zeus.html">Posąg Zeusa</a></td>
+                    </tr>
+                    </table>
+                    <table  class="menumed">
+                    <tr>
+                        <td class="menu"><a href="mauzoleum.html">Mauzoleum w Halikarnasie</a></td>
+                        <td class="menu"><a href="rhodos.html">Kolos Rodyjski</a></td>
+                        <td class="menu"><a href="latarnia.html">Latarnia Aleksandryjska</a></td>
+                        <td class="menu"><a href="galeria.html">Galeria</a></td>
+                        <td class="menu"><a href="form.html">Formularz</a></td>
+                        <td class="menu"><a href="index.html">Strona Główna</a></td>
+                </tr>
+            </table>
+            </nav>
+            </header>
+    <form action="mailto:maksymilian.dardzinski@tm1.edu.pl" method="post">
+        <h2>Która podstrona podobała ci się najbardziej?</h2>
+        <input type="radio" id="glowna" name="ktorastrona" value="glowan"> <label for=glowna>Strona Główna</label><br>
+       <input type="radio" id="ciekawostki" name="ktorastrona" value="cud"> <label for=ciekawostki>Któryś z cudów</label><br>
+       <input type="radio" id="gal" name="ktorastrona" value="gal" > <label for=gal>Galeria</label><br>
+       <h2>Co dodałbyś/dodałabyś coś do strony?</h2>
+       <input type="text">
+       <h2>Której z podanych grup poleciłbyś tą stronę?</h2>
+       <input type="checkbox" id="ucz" name="hlep" value="ucz"> <label for=ucz>Uczniom/Studentom</label><br>
+      <input type="checkbox" id="tur" name="hlep" value="tur"> <label for=tur>Turystom</label><br>
+      <input type="checkbox" id="hist" name="hlep" value="hist"> <label for=hist>Historykom</label><br>
+       <h2>Czy uważasz stronę za przydatną/interesującą?</h2>
+       <input type="radio" id="tak" name="szpion" value="tak"> <label for=tak>Tak</label><br>
+      <input type="radio" id="nie" name="szpion" value="nie"> <label for=nie>Nie</label><br>
+      <br>
+      <input type="submit" value="zwróć formularz"><input type="reset" value="Resetuj formularz">
+    </form>
+    </main>
+</body>
+</html>

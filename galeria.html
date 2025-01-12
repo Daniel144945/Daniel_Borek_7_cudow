@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <script>
+        var i = 1;
+function image(a){
+    var image = document.getElementById("image");
+    var link = document.getElementById("image_link");
+    if (a == 1){
+        i = 1;
+        image.src = "obrazy/banner.jpg";
+        image_link.href = image.src;
+    }
+    else if (a == 2){
+        i = 2;
+        image.src = "obrazy/ZUS.png";
+        image_link.href = image.src;
+    }
+    else if (a == 3){
+        i = 3;
+        image.src = "obrazy/kolos_z_rodeo.webp";
+        image_link.href = image.src;
+    }
+    else if (a == 4){
+        i = 4;
+        image.src = "obrazy/ogrody.jpg";
+        image_link.href = image.src;
+    }
+    else{
+        image.src = "obrazy/swiatelko.webp";
+        image_link.href = image.src;
+        i = 5;
+    }
+}
+function next(){
+    i++;
+    if (i == 6) i = 1;
+    image(i);
+}
+function previous(){
+    i--;
+    if (i == 0) i = 5;
+    image(i);
+}
+
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Galeria</h1>
+        <nav>
+            <table class="menu" id="bigmenu">
+                <tr>
+                    <td class="menu"><a href="piramidy.html">Piramida Cheopsa</a></td>
+                    <td class="menu"><a href="ogrody.html">Ogrody Semiramidy</a>
+                    <td class="menu"><a href="artemida.html">Świątynia Artemidy</a></td>
+                    <td class="menu"><a href="zeus.html">Posąg Zeusa</a></td>
+                    <td class="menu"><a href="mauzoleum.html">Mauzoleum w Halikarnasie</a></td>
+                    <td class="menu"><a href="rhodos.html">Kolos Rodyjski</a></td>
+                    <td class="menu"><a href="latarnia.html">Latarnia Aleksandryjska</a></td>
+                    <td class="menu"><a href="galeria.html">Galeria</a></td>
+                    <td class="menu"><a href="form.html">Formularz</a></td>
+                    <td class="menu"><a href="index.html">Strona Główna</a></td>
+                    
+                </tr>
+            </table>
+            <table  class="menumed">
+                <tr>
+                    <td class="menu"><a href="piramidy.html">Piramida Cheopsa</a></td>
+                    <td class="menu"><a href="ogrody.html">Ogrody Semiramidy</a>
+                    <td class="menu"><a href="artemida.html">Świątynia Artemidy</a></td>
+                    <td class="menu"><a href="zeus.html">Posąg Zeusa</a></td>
+                    </tr>
+                    </table>
+                    <table  class="menumed">
+                    <tr>
+                        <td class="menu"><a href="mauzoleum.html">Mauzoleum w Halikarnasie</a></td>
+                        <td class="menu"><a href="rhodos.html">Kolos Rodyjski</a></td>
+                        <td class="menu"><a href="latarnia.html">Latarnia Aleksandryjska</a></td>
+                        <td class="menu"><a href="galeria.html">Galeria</a></td>
+                        <td class="menu"><a href="form.html">Formularz</a></td>
+                        <td class="menu"><a href="index.html">Strona Główna</a></td>
+                </tr>
+            </table>
+            </nav>
+    </header>
+      <article>
+        <div id="galeria"><img src="obrazy/banner.jpg" id="image"></div>
+    <div id="strzalki">
+        <img src="obrazy/presto.png" alt="lewo" onclick="previous()" class="arrow">
+    <img src="obrazy/pronto.png" alt="prawo" onclick="next()" class="arrow">
+    </div>
+      </article>
+      <footer> wykonał Daniel Borek</footer>
+
+</body>
+</html>
